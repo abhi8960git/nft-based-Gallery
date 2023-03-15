@@ -1,10 +1,10 @@
 const main = async () => {
-  const gameContractFactory = await hre.ethers.getContractFactory('MyEpicGame');
+  const gameContractFactory = await hre.ethers.getContractFactory('NFTGallery');
   const gameContract = await gameContractFactory.deploy(                     
-    ["Leo", "Aang", "Pikachu"],       
-    ["https://i.imgur.com/pKd5Sdk.png", 
-    "https://i.imgur.com/xVu4vFL.png", 
-    "https://i.imgur.com/u7T87A6.png"],
+    ["asset1", "asset2", "asset3"],       
+    ["https://i.pinimg.com/originals/8d/62/4b/8d624bc47d1d7768b9be44adbb62cbe0.jpg", 
+    "https://besthqwallpapers.com/Uploads/2-9-2021/177635/thumb2-kung-jin-4k-red-neon-lights-mortal-kombat-mobile-fighting-games.jpg", 
+    "https://c4.wallpaperflare.com/wallpaper/390/582/340/green-outfit-jade-mortal-kombat-mortal-kombat-mk11-evil-hd-wallpaper-preview.jpg"],
     [100, 200, 300],                    
     [100, 50, 25]                       
   );
